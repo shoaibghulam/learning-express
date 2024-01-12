@@ -1,5 +1,5 @@
 # Ignore node_modules for Express.js projects
-/**/node_modules/
+/blog/node_modules/
 
 # Ignore log files
 *.log
