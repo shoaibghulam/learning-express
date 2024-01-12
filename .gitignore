@@ -1,11 +1,1 @@
-# Ignore node_modules for Express.js projects
-/blog/node_modules/
-
-# Ignore log files
-*.log
-
-# Ignore npm debug log
-npm-debug.log
-
-# Ignore yarn integrity file
-.yarn-integrity
+blog/node_modules/
