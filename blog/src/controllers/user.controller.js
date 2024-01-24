@@ -25,7 +25,7 @@ const SignleUserget=async (req, res) => {
 
 const post=async (req, res, next) => {
     try {
-        // req.body.password = hasherPassword(req.body.password);
+      
         const data = await User.create(req.body)
         data.save();
         res.status(200).json({
