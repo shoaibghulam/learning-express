@@ -1,5 +1,5 @@
 import { User } from "../models/user.model.js";
-import { hasherPassword } from "../utils/hasers.js";
+// import { hasherPassword } from "../utils/hasers.js";
 
 
 const get=async (req, res, next) => {
@@ -25,7 +25,7 @@ const SignleUserget=async (req, res) => {
 
 const post=async (req, res, next) => {
     try {
-        req.body.password = hasherPassword(req.body.password);
+        // req.body.password = hasherPassword(req.body.password);
         const data = await User.create(req.body)
         data.save();
         res.status(200).json({
