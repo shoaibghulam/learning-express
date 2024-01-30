@@ -10,7 +10,7 @@ const postSchema= new Schema({
         required:true,
      },
      category:{
-        type:String,
+        type:Types.ObjectId,
         ref:'Category',
         required:true,
      },
@@ -28,5 +28,8 @@ const postSchema= new Schema({
 }
 
 )
-
+// postSchema.pre('save',async function(next){
+//    if(!this.isModified('category')) return next();
+//    this.category = Types.objectId(this.category);
+// })
 export const Post = models.Post('Post',postSchema);

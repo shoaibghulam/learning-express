@@ -25,6 +25,11 @@ const userSchema = new Schema({
         required:true,
         lowrcase:true,
     },
+    avatar:{
+        type:String,
+        required:true,
+        
+    },
 },
 {
     timestamps:true

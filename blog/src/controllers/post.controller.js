@@ -25,7 +25,7 @@ const post= async (req, res, next)=>{
           });
         //  res.status(200).json()
      } catch (error) {
-        return res.json(error)
+        return res.status(400).json(error)
      }
     }
 

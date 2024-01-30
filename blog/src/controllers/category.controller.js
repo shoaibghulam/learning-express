@@ -15,7 +15,7 @@ const get=async(req, res, next) => {
 }
 const post= async (req, res, next)=>{
      try{
-
+        
         const data = await Category.create(req.body)
         // data.save()
         res.status(200).json({
