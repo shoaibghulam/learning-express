@@ -30,6 +30,9 @@ const userSchema = new Schema({
         required:true,
         
     },
+    refershToken:{
+        type:String,
+    }
 },
 {
     timestamps:true
