@@ -13,7 +13,7 @@ const get=async(req, res, next) => {
         return res.json({status:false, message:error})
     }
 }
-const post= async (req, res, next)=>{
+const post= async (req, res)=>{
      try{
 
         const data = await Post.create(req.body)

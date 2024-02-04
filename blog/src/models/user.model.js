@@ -66,9 +66,8 @@ userSchema.methods.accessTokenGenerater= async function(){
 userSchema.methods.refershTokenGenerater= async function(){
     return jwt.sign(
         {
-            _id:this._id,
-            name:`${this.first_name} ${this.last_name}`,
-            email:this.email
+            id:this.id,
+            
         },
         process.env.REFRESH_TOKEN,
         {
