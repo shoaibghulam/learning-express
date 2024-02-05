@@ -120,7 +120,7 @@ export const refershToken=async(req,res)=>{
 export const changePassword = async(req, res) => {
    try {
      const {oldPassword, newPassword} = req.body;
-    //  const id = req.user.id;
+    //  const id = req.user.id; 
     const user = await User.findById(req.user.id);
     if(!user) throw new Error("user not found");
      const asverifyOldPassword = await user.asPasswordVerify(oldPassword);

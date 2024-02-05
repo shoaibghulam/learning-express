@@ -32,4 +32,4 @@ const postSchema= new Schema({
 //    if(!this.isModified('category')) return next();
 //    this.category = Types.objectId(this.category);
 // })
-export const Post = models.Post('Post',postSchema);
+export const Post = model('Post',postSchema);
