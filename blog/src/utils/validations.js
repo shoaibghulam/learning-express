@@ -19,3 +19,13 @@ export const postValidateField=[
     body('author').notEmpty().withMessage('Author is required'),
     body('thumbnail').notEmpty().withMessage('Thumbnail is required'),
 ]
+
+export const updateUserValidateField=[
+    body('first_name').notEmpty().withMessage('First name is required'),
+    body('last_name').notEmpty().withMessage('Last name is required'),
+]
+
+export const updateUserAvatarValidate=[
+    body('thumbnail').notEmpty().withMessage('Thumbnail is required'),
+   
+]

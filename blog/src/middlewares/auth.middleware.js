@@ -9,7 +9,7 @@ export const verifyJwt= async(req,res,next)=>{
        
         const decodeData=  jwt.verify(token,process.env.ACCESS_TOKEN)
         const user =await User.findById(decodeData._id)
-        console.log("the user is: " + user)
+        
         if (!user) throw new Error("Invalid Token");
         req.user = user;
         next();
